@@ -1,0 +1,449 @@
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Network Intrusion Detection System</title>
+  <link rel="stylesheet" href="static/style.css">
+  <style>
+    body {
+      background: url('https://files.oaiusercontent.com/file-3tz9GdG3nPpo9chyjqcbER?se=2024-12-06T05%3A07%3A17Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dfdb89b4e-b390-463c-9d86-ee7f86a8a936.webp&sig=1p2sHv2QscvT4HbriWwmmi7uCu44f1kCS4ZksxLfC0o%3D') no-repeat center center fixed;
+      
+      background-size: cover;
+      color: white;
+      font-family: CircularStdBlack, sans-serif;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgba(16, 17, 46, 0.9); 
+      position: fixed;
+      top: 0;
+      width: 100%;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    li {
+      display: inline;
+    }
+
+    li a {
+      display: block;
+      padding: 14px 16px;
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .button {
+      background-color: #4CAF50; 
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 10px;
+    }
+
+    form {
+      background: rgba(0, 0, 0, 0.6); 
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+      margin: 0 auto;
+      width: 50%;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+
+  <ul>
+    <li>
+      <a style="pointer-events: none; font-size: 24px;">
+        Boosting Network Intrusion Detection With Two-Level Ensemble Learning And Knowledge Distillation Approaches
+      </a>
+    </li>
+  </ul>
+  <br><br><br><br><br>
+  
+  <div style="
+     font-size: 6em; 
+     opacity: 0.95; 
+     z-index: 1; 
+     pointer-events: none; 
+     right: 100px; 
+     top: 150px; 
+     color: #ffffff; 
+     position: fixed; 
+     font-weight: bold; 
+     text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); 
+     letter-spacing: 0.1em;
+     transform: rotate(-10deg);
+     line-height: 1.2;
+     font-family: 'Arial Black', sans-serif;
+     mix-blend-mode: overlay;
+     user-select: none;">
+  </div>
+  <form action="/predict" method="post">
+    <label for="attack">Attack:</label>
+    <select id="attack" name="attack">
+      <option value="0">Other</option>
+      <option value="1">neptune</option>
+      <option value="2">normal</option>
+      <option value="3">satan</option>
+    </select><br><br>
+
+    <label for="count">Number of connections to the same destination host as the current connection in the past two seconds:</label>
+    <input type="text" name="count" placeholder="count" required="required" /><br><br>
+
+    <label for="dst_host_diff_srv_rate">The percentage of connections that were to different services, among the connections aggregated in dst_host_count:</label>
+    <input type="text" name="dst_host_diff_srv_rate" placeholder="dst_host_diff_srv_rate" required="required" /><br><br>
+
+    <label for="dst_host_same_src_port_rate">The percentage of connections that were to the same source port, among the connections aggregated in dst_host_srv_count:</label>
+    <input type="text" name="dst_host_same_src_port_rate" placeholder="dst_host_same_src_port_rate" required="required" /><br><br>
+
+    <label for="dst_host_same_srv_rate">The percentage of connections that were to the same service, among the connections aggregated in dst_host_count:</label>
+    <input type="text" name="dst_host_same_srv_rate" placeholder="dst_host_same_srv_rate" required="required" /><br><br>
+
+    <label for="dst_host_srv_count">Number of connections having the same port number:</label>
+    <input type="text" name="dst_host_srv_count" placeholder="dst_host_srv_count" required="required" /><br><br>
+
+    <label for="flag">Status of the connection – Normal or Error:</label>
+    <select id="flag" name="flag">
+      <option value="0">Other</option>
+      <option value="1">S0</option>
+      <option value="2">SF</option>
+    </select><br><br>
+
+    <label for="last_flag">Last Flag:</label>
+    <input type="text" name="last_flag" placeholder="last_flag" required="required" /><br><br>
+
+    <label for="logged_in">1 if successfully logged in; 0 otherwise:</label>
+    <input type="text" name="logged_in" placeholder="logged_in" required="required" /><br><br>
+
+    <label for="same_srv_rate">The percentage of connections that were to the same service, among the connections aggregated in count:</label>
+    <input type="text" name="same_srv_rate" placeholder="same_srv_rate" required="required" /><br><br>
+
+    <label for="serror_rate">The percentage of connections that have activated the flag (4) s0, s1, s2 or s3, among the connections aggregated in count:</label>
+    <input type="text" name="serror_rate" placeholder="serror_rate" required="required" /><br><br>
+
+    <label for="service_http">Destination network service used http or not:</label>
+    <select id="service_http" name="service_http">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </select><br><br>
+
+    <button type="submit" class="button">Predict</button>
+  </form>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Navigation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #0078D7;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            gap: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: white;
+            color: #0078D7;
+        }
+        .container {
+            padding: 2rem;
+            display: none;
+        }
+        .container.active {
+            display: block;
+        }
+        .content img {
+            width: 100%;
+            max-width: 600px;
+            margin: 1rem 0;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #f1f1f1;
+            margin-top: 2rem;
+        }
+
+
+
+
+
+
+
+
+
+
+        ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgba(16, 17, 46, 0.9);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    li {
+      display: inline;
+    }
+
+    li a {
+      display: block;
+      padding: 14px 16px;
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    form {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      margin: 80px auto;
+      width: 50%;
+      font-size: 1rem;
+      color: #ffffff;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    form input[type="text"],
+    form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 1rem;
+    }
+
+    form input:focus, 
+    form select:focus {
+      outline: none;
+      border-color: #0078D7;
+      box-shadow: 0 0 5px #0078D7;
+    }
+
+    form button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #45a049;
+    }
+
+    form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('.container');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <img src="https://i0.wp.com/www.nrtec.in/wp-content/uploads/2018/05/logo-nec1.png?w=1170&ssl=1" alt="Logo">
+    <nav>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('about-project')">About Project</a>
+        <a href="#" onclick="showSection('test')">Predictions</a>
+        <a href="#" onclick="showSection('model-evaluation')">Model Evaluation</a>
+        <a href="#" onclick="showSection('project-flowchart')">Project Flowchart</a>
+    </nav>
+</header>
+
+<div id="home" class="container active">
+    <h1>Welcome to the Project</h1>
+    <p>This project showcases our team's effort in building a powerful predictive model.</p>
+    <img src="static\WhatsApp Image 2024-12-23 at 12.34.17.jpeg" alt="Home" width="1450" height="350">
+</div>
+<!-- https://bleuwire.com/wp-content/uploads/2018/12/network-intrusion-detection-system.jpg -->
+<div id="about-project" class="container">
+    <h1>About the Project</h1>
+    <p>This project focuses on predicting future outcomes using advanced machine learning techniques.</p>
+    <p>Our research, titled "Boosting Network Intrusion Detection with Two-Level Ensemble Learning and Knowledge Distillation Approaches," is a collaborative effort spearheaded by myself, Macharla Bala Rangarao, alongside my esteemed co-authors. This work is conducted under the expert guidance of Dr. S.V.N. Sreenivasu at Narasaraopeta Engineering College.
+
+      This study aims to revolutionize traditional Intrusion Detection Systems (IDS) by addressing their limitations through an innovative, AI-driven framework. By leveraging two-level ensemble learning and knowledge distillation techniques, we seek to enhance detection accuracy, reduce computational overhead, and ensure robust network security.
+      
+      Our research reflects our commitment to advancing cybersecurity and contributing meaningful solutions to the ever-evolving challenges in the field.
+      </p>
+    <!-- <img src="https://via.placeholder.com/600x300.png?text=About+Project" alt="About Project"> -->
+</div>
+
+<div id="test" class="container">
+    <h1>Predictions</h1>
+    <p>Our model generates accurate predictions based on the provided data.</p>
+    <!-- <img src="https://via.placeholder.com/600x300.png?text=Predictions" alt="test"> -->
+    
+    <form action="/predict" method="post">
+      <label for="attack">Attack:</label>
+      <select id="attack" name="attack">
+        <option value="0">Other</option>
+        <option value="1">neptune</option>
+        <option value="2">normal</option>
+        <option value="3">satan</option>
+      </select><br><br>
+  
+      <label for="count">Number of connections to the same destination host as the current connection in the past two seconds:</label>
+      <input type="text" name="count" placeholder="count" required="required" /><br><br>
+  
+      <label for="dst_host_diff_srv_rate">The percentage of connections that were to different services, among the connections aggregated in dst_host_count:</label>
+      <input type="text" name="dst_host_diff_srv_rate" placeholder="dst_host_diff_srv_rate" required="required" /><br><br>
+  
+      <label for="dst_host_same_src_port_rate">The percentage of connections that were to the same source port, among the connections aggregated in dst_host_srv_count:</label>
+      <input type="text" name="dst_host_same_src_port_rate" placeholder="dst_host_same_src_port_rate" required="required" /><br><br>
+  
+      <label for="dst_host_same_srv_rate">The percentage of connections that were to the same service, among the connections aggregated in dst_host_count:</label>
+      <input type="text" name="dst_host_same_srv_rate" placeholder="dst_host_same_srv_rate" required="required" /><br><br>
+  
+      <label for="dst_host_srv_count">Number of connections having the same port number:</label>
+      <input type="text" name="dst_host_srv_count" placeholder="dst_host_srv_count" required="required" /><br><br>
+  
+      <label for="flag">Status of the connection – Normal or Error:</label>
+      <select id="flag" name="flag">
+        <option value="0">Other</option>
+        <option value="1">S0</option>
+        <option value="2">SF</option>
+      </select><br><br>
+  
+      <label for="last_flag">Last Flag:</label>
+      <input type="text" name="last_flag" placeholder="last_flag" required="required" /><br><br>
+  
+      <label for="logged_in">1 if successfully logged in; 0 otherwise:</label>
+      <input type="text" name="logged_in" placeholder="logged_in" required="required" /><br><br>
+  
+      <label for="same_srv_rate">The percentage of connections that were to the same service, among the connections aggregated in count:</label>
+      <input type="text" name="same_srv_rate" placeholder="same_srv_rate" required="required" /><br><br>
+  
+      <label for="serror_rate">The percentage of connections that have activated the flag (4) s0, s1, s2 or s3, among the connections aggregated in count:</label>
+      <input type="text" name="serror_rate" placeholder="serror_rate" required="required" /><br><br>
+  
+      <label for="service_http">Destination network service used http or not:</label>
+      <select id="service_http" name="service_http">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select><br><br>
+  
+      <button type="submit" class="button">Predict</button>
+    </form>
+</div>
+
+<div id="model-evaluation" class="container">
+    <h1>Model Evaluation Metrics</h1>
+    <p>Here are the evaluation metrics that showcase the performance of our model.</p>
+    <img src="static\fig1213.png" alt="Model Evaluation" height="500" width="950">
+    <img src="static\Screenshot 2024-12-18 130211.png" alt="Model Evaluation">
+
+</div>
+
+<div id="project-flowchart" class="container">
+    <h1>Project Flowchart</h1>
+    <p>The flowchart below explains the steps involved in our project.</p>
+    <img src="static\Screenshot 2024-08-24 203358.png" alt="Flowchart" height="500" width="1250">
+</div>
+
+<footer>
+    <p>AB1-Team Members: 1. Macharla Bala Rangarao 2. Bollavaram Venkata Srinivasulu 3. Boddupalli Venkata Siva Rama krishna. </p>
+</footer>
+
+</body>
+</html>
+
